@@ -1,7 +1,7 @@
 // Je définis mes variables
-var less = 'cardwl';
-var more = 'cardwm';
-var victory = 'cardwv';
+var less = "C'est plus petit";
+var more = "C'est plus grand";
+var victory = "Trouvé, c'est gagné";
 var value = 0;
 var valuemin = 1;
 var valuemax = 10;
@@ -13,14 +13,14 @@ function testGo(){
     console.log(entry.value);
     // Je donne mes conditions
     if(entry < random ){
-        less
+        "less"
     }
 
     else if(entry > random){
-        more
+        "more"
     }
     
-    else{
-        victory
+    else if(entry == random){
+        "victory"
     }
 }
