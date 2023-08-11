@@ -35,9 +35,19 @@ function testGo(){
 
     else if(entry != random && entrynumber==3 ){
         entry3.innerHTML = "C'est perdu, dommage...";
+        var refreshButton = document.createElement("a");
+        refreshButton.href = "index.html";
+        refreshButton.className = "mx-auto btn btn-success";
+        refreshButton.textContent = "Une nouvelle partie ?";
+        entry3.appendChild(refreshButton);
     }
 
-    else if(entry == random){
+    if (entry == random) {
         entry3.innerHTML = "C'est trouvé, bravo !";
-    }
+        var refreshButton = document.createElement("a");
+        refreshButton.href = "index.html";
+        refreshButton.className = "mx-auto btn btn-success";
+        refreshButton.textContent = "Une nouvelle partie ?";
+        entry3.appendChild(refreshButton);
+    }    
 }
